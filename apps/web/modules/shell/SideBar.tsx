@@ -14,6 +14,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@coss/ui/icons";
 import Link from "next/link";
 import type { User as UserAuth } from "next-auth";
 import { useSession } from "next-auth/react";
+import { InstantCallButton } from "./instant-call/InstantCallButton";
 import { KBarTrigger } from "./Kbar";
 import { Navigation } from "./navigation/Navigation";
 import { useBottomNavItems } from "./useBottomNavItems";
@@ -110,6 +111,7 @@ export function SideBar({ bannersHeight, user }: SideBarProps) {
                   <UserDropdown small />
                 </div>
               )}
+              <InstantCallButton />
               <KBarTrigger />
             </div>
           </header>

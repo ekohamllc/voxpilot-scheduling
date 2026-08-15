@@ -35,11 +35,11 @@ export const WEBAPP_URL_FOR_OAUTH = IS_PRODUCTION || IS_DEV ? WEBAPP_URL : "http
 /** @deprecated use `WEBAPP_URL` */
 export const BASE_URL = WEBAPP_URL;
 export const WEBSITE_URL = ensureProtocol(process.env.NEXT_PUBLIC_WEBSITE_URL) || "https://cal.com";
-export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Cal.diy";
-export const SUPPORT_MAIL_ADDRESS = process.env.NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS || "help@cal.com";
-export const COMPANY_NAME = process.env.NEXT_PUBLIC_COMPANY_NAME || "Cal.com, Inc.";
-export const SENDER_ID = process.env.NEXT_PUBLIC_SENDER_ID || "Cal";
-export const SENDER_NAME = process.env.NEXT_PUBLIC_SENDGRID_SENDER_NAME || "Cal.diy";
+export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "VoxPilot Scheduling";
+export const SUPPORT_MAIL_ADDRESS = process.env.NEXT_PUBLIC_SUPPORT_MAIL_ADDRESS || "support@voxpilot.io";
+export const COMPANY_NAME = process.env.NEXT_PUBLIC_COMPANY_NAME || "VoxPilot";
+export const SENDER_ID = process.env.NEXT_PUBLIC_SENDER_ID || "VoxPilot";
+export const SENDER_NAME = process.env.NEXT_PUBLIC_SENDGRID_SENDER_NAME || "VoxPilot Scheduling";
 export const EMAIL_FROM_NAME = process.env.EMAIL_FROM_NAME || APP_NAME;
 
 // This is the URL from which all Cal Links and their assets are served.
@@ -98,9 +98,9 @@ export const PUBLIC_QUICK_AVAILABILITY_ROLLOUT =
 
 /** @deprecated use `WEBAPP_URL` */
 export const NEXT_PUBLIC_BASE_URL = process.env.NEXT_PUBLIC_WEBAPP_URL || `https://${process.env.VERCEL_URL}`;
-export const LOGO = "/calcom-logo-white-word.svg";
-export const LOGO_DARK = "/cal-logo-word-black.svg";
-export const LOGO_ICON = "/cal-com-icon-white.svg";
+export const LOGO = "/voxpilot-wordmark-knockout.svg";
+export const LOGO_DARK = "/voxpilot-wordmark-ink.svg";
+export const LOGO_ICON = "/voxpilot-mark-knockout.svg";
 export const AVATAR_FALLBACK = "/avatar.svg";
 export const FAVICON_16 = "/favicon-16x16.png";
 export const FAVICON_32 = "/favicon-32x32.png";
@@ -159,8 +159,10 @@ export const CREDENTIAL_SYNC_ENDPOINT = process.env.CALCOM_CREDENTIAL_SYNC_ENDPO
 // Service Account Encryption Key for encrypting/decrypting service account keys
 export const SERVICE_ACCOUNT_ENCRYPTION_KEY = process.env.CALCOM_SERVICE_ACCOUNT_ENCRYPTION_KEY;
 
-export const DEFAULT_LIGHT_BRAND_COLOR = "#292929";
-export const DEFAULT_DARK_BRAND_COLOR = "#fafafa";
+// VoxPilot Cutline Signal brand default (cobalt). Per-user/team/org brandColor
+// overrides in the appearance settings still take precedence over this default.
+export const DEFAULT_LIGHT_BRAND_COLOR = "#2457FF";
+export const DEFAULT_DARK_BRAND_COLOR = "#2457FF";
 
 export const TOP_BANNER_HEIGHT = 40;
 

@@ -49,7 +49,7 @@ export const metadata = {
       {
         rel: "icon-mask",
         url: "/safari-pinned-tab.svg",
-        color: "#000000",
+        color: "#2457FF",
       },
       {
         url: "/api/logo?type=favicon-16",
@@ -65,11 +65,9 @@ export const metadata = {
   },
   manifest: "/site.webmanifest",
   other: {
-    "application-TileColor": "#ff0000",
+    "application-TileColor": "#2457FF",
   },
   twitter: {
-    site: "@calcom",
-    creator: "@calcom",
     card: "summary_large_image",
   },
   robots: {

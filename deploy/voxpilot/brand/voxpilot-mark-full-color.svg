@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">VoxPilot Cutline Signal full-color mark</title>
+  <desc id="desc">Cobalt bird mark with signal-yellow eye and open hidden V.</desc>
+  <path d="M5 35C14 33 22 27 29 15C31 23 34 29 37 33C43 27 50 24 57 26L63 30L55 35C54 40 57 45 61 50C51 49 43 45 35 39C30 44 24 49 17 52L20 39C14 39 9 37 5 35ZM22 30L35 42L49 28L43 39L35 48L27 37ZM52 26.5A4 2.5 0 1 0 52 31.5A4 2.5 0 1 0 52 26.5Z" fill="#2457FF" fill-rule="evenodd"/>
+  <ellipse cx="52" cy="29" rx="4" ry="2.5" fill="#F5D90A"/>
+</svg>

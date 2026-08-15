@@ -1,7 +1,7 @@
 {
-    "name": "Cal.diy",
-    "short_name": "Cal.diy",
-    "description": "Scheduling infrastructure for absolutely everyone.",
+    "name": "VoxPilot Scheduling",
+    "short_name": "VoxPilot Scheduling",
+    "description": "Appointment and consultation scheduling for VoxPilot.",
     "icons": [
         {
             "src": "/api/logo?type=android-chrome-192",
@@ -14,10 +14,10 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#2457FF",
+    "background_color": "#F3F6FA",
     "display_override": ["minimal-ui"],
     "display": "standalone",
     "scope": "/",
-    "start_url": "/"  
+    "start_url": "/"
 }
