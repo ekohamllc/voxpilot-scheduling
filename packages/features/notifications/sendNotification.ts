@@ -1,6 +1,8 @@
 import { Logger } from "@nestjs/common";
 import webpush from "web-push";
 
+import { SUPPORT_MAIL_ADDRESS } from "@calcom/lib/constants";
+
 const logger = new Logger("WebPush");
 let isVapidConfigured = false;
 
@@ -12,7 +14,7 @@ const vapidKeys = {
 if (vapidKeys.publicKey && vapidKeys.privateKey) {
   try {
     // The mail to email address should be the one at which push service providers can reach you. It can also be a URL.
-    webpush.setVapidDetails("mailto:support@cal.com", vapidKeys.publicKey, vapidKeys.privateKey);
+    webpush.setVapidDetails(`mailto:${SUPPORT_MAIL_ADDRESS}`, vapidKeys.publicKey, vapidKeys.privateKey);
     logger.log("VAPID keys loaded. Web push enabled.");
     isVapidConfigured = true;
   } catch (err) {
