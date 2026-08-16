@@ -35,6 +35,7 @@ const sendVerificationRequest = async ({
       base_url: WEBAPP_URL,
       signin_url: url,
       email: identifier,
+      app_name: APP_NAME,
     }),
   });
 };
